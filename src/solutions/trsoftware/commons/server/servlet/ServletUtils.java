@@ -50,6 +50,12 @@ public abstract class ServletUtils {
   public static final String X_FORWARDED_FOR_HEADER = "X-Forwarded-For";
 
   /**
+   * CF Support (ensures ipv4)
+   *
+   */
+  public static final String X_REAL_IP = "X-Real-Ip";
+
+  /**
    * {@link #getRequestURL(HttpServletRequest)} will save the parsed {@link URL} in the request under this attribute
    * name.
    */
@@ -351,13 +357,9 @@ public abstract class ServletUtils {
    *     How does Cloudflare handle HTTP Request headers?</a>
    */
   public static String getClientIpAddress(HttpServletRequest request) {
-    String xff = request.getHeader(X_FORWARDED_FOR_HEADER); // comma-separated list of IP addresses (see https://en.wikipedia.org/wiki/X-Forwarded-For#Format)
+    String xff = request.getHeader(X_REAL_IP); // comma-separated list of IP addresses (see https://en.wikipedia.org/wiki/X-Forwarded-For#Format)
     if (StringUtils.notBlank(xff)) {
-      List<String> ipList = StringUtils.splitAndTrim(xff, ",");
-      // the first address in this list is the originating client IP
-      if (!ipList.isEmpty()) {
-        return ipList.get(0);
-      }
+      return xff;
     }
     return request.getRemoteAddr();
     /*
