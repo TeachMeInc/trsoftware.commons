@@ -18,7 +18,7 @@
       <configuration>
         <setting name="compilerMaxHeapSize" value="1024" />
         <setting name="gwtScriptOutputStyle" value="DETAILED" />
-        <setting name="gwtSdkUrl" value="file://$GWT_HOME$/gwt-2.8.2" />
+        <setting name="gwtSdkUrl" value="file://$PROGRAMMING_LIBS_DIR$/gwt-2.8.2" />
         <packaging>
           <module name="solutions.trsoftware.commons.Debug" enabled="false" />
           <module name="solutions.trsoftware.commons.PreserveStackTraces" enabled="false" />
@@ -78,66 +78,34 @@
       </library>
     </orderEntry>
     <orderEntry type="module-library">
-      <library name="Apache Tomcat 8.5.31 (minus ECJ)">
+      <library name="Apache Tomcat 8.5.100 (minus ECJ)">
         <CLASSES>
-          <root url="file://$TOMCAT_8_HOME$/bin" />
-          <root url="jar://$TOMCAT_8_HOME$/lib/jasper-el.jar!/" />
-          <root url="jar://$TOMCAT_8_HOME$/lib/tomcat-jdbc.jar!/" />
-          <root url="jar://$TOMCAT_8_HOME$/lib/el-api.jar!/" />
-          <root url="jar://$TOMCAT_8_HOME$/lib/tomcat-jni.jar!/" />
-          <root url="jar://$TOMCAT_8_HOME$/lib/catalina-ha.jar!/" />
-          <root url="jar://$TOMCAT_8_HOME$/lib/servlet-api.jar!/" />
-          <root url="jar://$TOMCAT_8_HOME$/lib/catalina-tribes.jar!/" />
-          <root url="jar://$TOMCAT_8_HOME$/lib/tomcat-util.jar!/" />
-          <root url="jar://$TOMCAT_8_HOME$/lib/catalina.jar!/" />
-          <root url="jar://$TOMCAT_8_HOME$/lib/tomcat-coyote.jar!/" />
-          <root url="jar://$TOMCAT_8_HOME$/lib/tomcat-dbcp.jar!/" />
-          <root url="jar://$TOMCAT_8_HOME$/lib/jsp-api.jar!/" />
-          <root url="jar://$TOMCAT_8_HOME$/lib/catalina-ant.jar!/" />
-          <root url="jar://$TOMCAT_8_HOME$/lib/websocket-api.jar!/" />
-          <root url="jar://$TOMCAT_8_HOME$/lib/tomcat-util-scan.jar!/" />
-          <root url="jar://$TOMCAT_8_HOME$/lib/annotations-api.jar!/" />
-          <root url="jar://$TOMCAT_8_HOME$/lib/jaspic-api.jar!/" />
-          <root url="jar://$TOMCAT_8_HOME$/lib/tomcat-websocket.jar!/" />
-          <root url="jar://$TOMCAT_8_HOME$/lib/tomcat-api.jar!/" />
-          <root url="jar://$TOMCAT_8_HOME$/lib/catalina-storeconfig.jar!/" />
-          <root url="jar://$TOMCAT_8_HOME$/lib/jasper.jar!/" />
+          <root url="file:///opt/homebrew/Cellar/tomcat@8/8.5.100/libexec/lib" />
         </CLASSES>
         <JAVADOC />
-        <SOURCES>
-          <root url="file://$TOMCAT_8_HOME$" />
-          <root url="jar://$TOMCAT_8_HOME$/apache-tomcat-8.5.31-src.zip!/apache-tomcat-8.5.31-src/java" />
-          <root url="jar://$TOMCAT_8_HOME$/apache-tomcat-8.5.31-src.zip!/apache-tomcat-8.5.31-src/modules/jdbc-pool/src/main/java" />
-          <root url="jar://$TOMCAT_8_HOME$/apache-tomcat-8.5.31-src.zip!/apache-tomcat-8.5.31-src/modules/jdbc-pool/src/test/java" />
-          <root url="jar://$TOMCAT_8_HOME$/apache-tomcat-8.5.31-src.zip!/apache-tomcat-8.5.31-src/test" />
-          <root url="jar://$TOMCAT_8_HOME$/apache-tomcat-8.5.31-src.zip!/apache-tomcat-8.5.31-src/webapps/docs/appdev/sample/src" />
-          <root url="jar://$TOMCAT_8_HOME$/apache-tomcat-8.5.31-src.zip!/apache-tomcat-8.5.31-src/webapps/examples/WEB-INF/classes" />
-          <root url="jar://$TOMCAT_8_HOME$/apache-tomcat-8.5.31-src.zip!/apache-tomcat-8.5.31-src/webapps/examples/WEB-INF/jsp/applet" />
-          <root url="jar://$TOMCAT_8_HOME$/apache-tomcat-8.5.31-src.zip!/apache-tomcat-8.5.31-src/webapps/examples/jsp/plugin/applet" />
-        </SOURCES>
-        <jarDirectory url="file://$TOMCAT_8_HOME$/bin" recursive="false" />
-        <jarDirectory url="file://$TOMCAT_8_HOME$" recursive="false" type="SOURCES" />
+        <SOURCES />
+        <jarDirectory url="file:///opt/homebrew/Cellar/tomcat@8/8.5.100/libexec/lib" recursive="false" />
       </library>
     </orderEntry>
     <orderEntry type="module-library">
       <library name="gwt-2.8.2">
         <CLASSES>
-          <root url="file://$GWT_HOME$/gwt-2.8.2" />
+          <root url="file://$PROGRAMMING_LIBS_DIR$/gwt-2.8.2" />
         </CLASSES>
         <JAVADOC>
-          <root url="file://$GWT_HOME$/gwt-2.8.2/doc/javadoc" />
+          <root url="file://$PROGRAMMING_LIBS_DIR$/gwt-2.8.2/doc/javadoc" />
         </JAVADOC>
         <SOURCES>
-          <root url="file://$GWT_HOME$/gwt-2.8.2/samples/DynaTableRf/src/main/java" />
-          <root url="file://$GWT_HOME$/gwt-2.8.2/samples/DynaTable/src" />
-          <root url="file://$GWT_HOME$/gwt-2.8.2/samples/Hello/src" />
-          <root url="file://$GWT_HOME$/gwt-2.8.2/samples/JSON/src" />
-          <root url="file://$GWT_HOME$/gwt-2.8.2/samples/Mail/src" />
-          <root url="file://$GWT_HOME$/gwt-2.8.2/samples/MobileWebApp/src/main/java" />
-          <root url="file://$GWT_HOME$/gwt-2.8.2/samples/MobileWebApp/src/test/java" />
-          <root url="file://$GWT_HOME$/gwt-2.8.2/samples/Showcase/src" />
-          <root url="file://$GWT_HOME$/gwt-2.8.2/samples/Validation/src/main/java" />
-          <root url="file://$GWT_HOME$/gwt-2.8.2" />
+          <root url="file://$PROGRAMMING_LIBS_DIR$/gwt-2.8.2/samples/DynaTableRf/src/main/java" />
+          <root url="file://$PROGRAMMING_LIBS_DIR$/gwt-2.8.2/samples/DynaTable/src" />
+          <root url="file://$PROGRAMMING_LIBS_DIR$/gwt-2.8.2/samples/Hello/src" />
+          <root url="file://$PROGRAMMING_LIBS_DIR$/gwt-2.8.2/samples/JSON/src" />
+          <root url="file://$PROGRAMMING_LIBS_DIR$/gwt-2.8.2/samples/Mail/src" />
+          <root url="file://$PROGRAMMING_LIBS_DIR$/gwt-2.8.2/samples/MobileWebApp/src/main/java" />
+          <root url="file://$PROGRAMMING_LIBS_DIR$/gwt-2.8.2/samples/MobileWebApp/src/test/java" />
+          <root url="file://$PROGRAMMING_LIBS_DIR$/gwt-2.8.2/samples/Showcase/src" />
+          <root url="file://$PROGRAMMING_LIBS_DIR$/gwt-2.8.2/samples/Validation/src/main/java" />
+          <root url="file://$PROGRAMMING_LIBS_DIR$/gwt-2.8.2" />
           <root url="jar://$PROGRAMMING_LIBS_DIR$/jetty-all-9.2.14.v20151106/jetty-all-9.2.14.v20151106-sources.jar!/" />
           <root url="jar://$PROGRAMMING_LIBS_DIR$/jetty-all-9.2.14.v20151106/jetty-jsp-9.2.14.v20151106-sources.jar!/" />
           <root url="jar://$PROGRAMMING_LIBS_DIR$/jetty-all-9.2.14.v20151106/apache-jsp-9.2.14.v20151106-sources.jar!/" />
@@ -147,8 +115,8 @@
           <root url="jar://$PROGRAMMING_LIBS_DIR$/jetty-all-9.2.14.v20151106/jetty-util-9.2.14.v20151106-sources.jar!/" />
           <root url="file://$PROGRAMMING_LIBS_DIR$/htmlunit-2.19/src/main/java" />
         </SOURCES>
-        <jarDirectory url="file://$GWT_HOME$/gwt-2.8.2" recursive="false" />
-        <jarDirectory url="file://$GWT_HOME$/gwt-2.8.2" recursive="false" type="SOURCES" />
+        <jarDirectory url="file://$PROGRAMMING_LIBS_DIR$/gwt-2.8.2" recursive="false" />
+        <jarDirectory url="file://$PROGRAMMING_LIBS_DIR$/gwt-2.8.2" recursive="false" type="SOURCES" />
       </library>
     </orderEntry>
     <orderEntry type="module-library" scope="TEST">
