@@ -33,21 +33,12 @@
     whether perfect stack traces can be reconstructed without stack emulation.
    -->
   <define-property name="chromeWithColNumbers" values="true,false"/>
+  <!--
+    This property no longer works as expected and causes the
+    app to fail to load in Firefox 138 - force the value to always be false
+  -->
   <property-provider name="chromeWithColNumbers">
     <![CDATA[
-      if (Error && Error.captureStackTrace) {
-		    try {
-          null.a();  // will throw an exception
-        } catch (e) {
-          if (e.stack) {
-            // split the stack trace into constituent elements
-            var stackLines = e.stack.split("\n");
-            if (stackLines && stackLines.length > 1 && /:\d+:\d+\)?\s*$/.test(stackLines[1])) {
-              return true;
-            }
-          }
-        }
-      }
       return false;
 		]]>
 	</property-provider>
@@ -55,6 +46,8 @@
     This property is only for webkit-based browsers.  It basically serves
     to differentiate between Chrome and Safari.  As of May 27, 2013,
     no browser other than Chrome provides the column numbers.
+    NOTE: this does not seem to work for Firefox 138 - it sets
+    NOTE: chromeWithColNumbers to `true` despite user.agent being gecko1_8
    -->
   <set-property name="chromeWithColNumbers" value="false">
     <none>
